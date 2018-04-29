@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EasyPaint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q6n-40-GWW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Uq-0q-Z9d">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seL-Zf-VS7">
+                                <rect key="frame" x="327" y="615" width="32" height="32"/>
+                                <state key="normal" image="RefreshButton"/>
+                                <connections>
+                                    <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OYP-Md-4uY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6D-Rs-BVo">
+                                <rect key="frame" x="64" y="623" width="13" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3c-wQ-9WW">
+                                <rect key="frame" x="93" y="615" width="32" height="32"/>
+                                <state key="normal" image="PlusButton"/>
+                                <connections>
+                                    <action selector="plusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xYK-9r-mKg"/>
+                                </connections>
+                            </button>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbQ-M6-vEK">
+                                <rect key="frame" x="28" y="148" width="319" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMY-Ar-qIy">
+                                <rect key="frame" x="16" y="615" width="32" height="32"/>
+                                <state key="normal" image="MinusButton"/>
+                                <connections>
+                                    <action selector="minusButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="59h-LC-omW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4d-IK-UZ0">
+                                <rect key="frame" x="267" y="613" width="44" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Color">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="colorButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oMV-ea-XNb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wn-1m-BhJ">
+                                <rect key="frame" x="141" y="613" width="59" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Rubber">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rubberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QUh-Y4-IQe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xK1-eH-tuy">
+                                <rect key="frame" x="308" y="36" width="51" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6E-g9-TQZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wbQ-M6-vEK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="128" id="0Pu-lQ-e0Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v4d-IK-UZ0" secondAttribute="bottom" constant="20" id="36T-Ro-iTB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="seL-Zf-VS7" secondAttribute="trailing" constant="16" id="420-Sn-8kE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="seL-Zf-VS7" secondAttribute="bottom" constant="20" id="5Hf-vl-qc7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Uq-0q-Z9d" secondAttribute="bottom" id="5qg-Oq-b3o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a3c-wQ-9WW" secondAttribute="bottom" constant="20" id="6pw-8p-2Gx"/>
+                            <constraint firstItem="A6D-Rs-BVo" firstAttribute="leading" secondItem="KMY-Ar-qIy" secondAttribute="trailing" constant="16" id="ASX-rf-KtH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Uq-0q-Z9d" secondAttribute="trailing" id="DBE-oQ-2yD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q6n-40-GWW" secondAttribute="trailing" id="GxS-NC-Amv"/>
+                            <constraint firstItem="xK1-eH-tuy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="I39-LK-Rlr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A6D-Rs-BVo" secondAttribute="bottom" constant="20" id="II1-Cb-WlK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wbQ-M6-vEK" secondAttribute="trailing" constant="28" id="JOD-Ef-aqS"/>
+                            <constraint firstItem="0Wn-1m-BhJ" firstAttribute="leading" secondItem="a3c-wQ-9WW" secondAttribute="trailing" constant="16" id="JXy-Dm-TAH"/>
+                            <constraint firstItem="Q6n-40-GWW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Onb-BI-VIW"/>
+                            <constraint firstItem="2Uq-0q-Z9d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="Pt2-z1-42F"/>
+                            <constraint firstItem="a3c-wQ-9WW" firstAttribute="leading" secondItem="A6D-Rs-BVo" secondAttribute="trailing" constant="16" id="REr-SH-anK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xK1-eH-tuy" secondAttribute="trailing" constant="16" id="RG2-0V-TD8"/>
+                            <constraint firstItem="2Uq-0q-Z9d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T3B-OP-pUm"/>
+                            <constraint firstItem="wbQ-M6-vEK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="c9I-LS-LCz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KMY-Ar-qIy" secondAttribute="bottom" constant="20" id="dqp-UV-tYp"/>
+                            <constraint firstItem="Q6n-40-GWW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="hxM-Fx-mnw"/>
+                            <constraint firstItem="seL-Zf-VS7" firstAttribute="leading" secondItem="v4d-IK-UZ0" secondAttribute="trailing" constant="16" id="nk5-aX-bRn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q6n-40-GWW" secondAttribute="bottom" id="rSv-7E-PBq"/>
+                            <constraint firstItem="KMY-Ar-qIy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="y7c-nS-M0b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Wn-1m-BhJ" secondAttribute="bottom" constant="20" id="yJL-eQ-dK4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="brushSizeLabel" destination="A6D-Rs-BVo" id="67U-cn-skv"/>
+                        <outlet property="colorButton" destination="v4d-IK-UZ0" id="HPM-hQ-Xdi"/>
+                        <outlet property="mainImageView" destination="Q6n-40-GWW" id="f5r-NQ-2ax"/>
+                        <outlet property="pickerView" destination="wbQ-M6-vEK" id="OAp-XA-fbl"/>
+                        <outlet property="shareButton" destination="xK1-eH-tuy" id="2hO-qi-ugC"/>
+                        <outlet property="tempImageView" destination="2Uq-0q-Z9d" id="unk-eu-J7s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MinusButton" width="32" height="32"/>
+        <image name="PlusButton" width="32" height="32"/>
+        <image name="RefreshButton" width="32" height="32"/>
+    </resources>
+</document>

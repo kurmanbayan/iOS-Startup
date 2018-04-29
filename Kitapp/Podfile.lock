@@ -1,0 +1,20 @@
+PODS:
+  - KRPullLoader (1.1.0)
+  - SDWebImage (4.1.2):
+    - SDWebImage/Core (= 4.1.2)
+  - SDWebImage/Core (4.1.2)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - KRPullLoader
+  - SDWebImage
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  KRPullLoader: 8209e472b2f7f67b22e809f0b614ca1043a8239e
+  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: fdeccb1abd6cc319046bc7c614c4eac5dcc2f47b
+
+COCOAPODS: 1.3.1
